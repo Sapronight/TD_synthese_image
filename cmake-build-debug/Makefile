@@ -204,6 +204,33 @@ src/Color.cpp.s:
 	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Color.cpp.s
 .PHONY : src/Color.cpp.s
 
+src/Light.o: src/Light.cpp.o
+
+.PHONY : src/Light.o
+
+# target to build an object file
+src/Light.cpp.o:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Light.cpp.o
+.PHONY : src/Light.cpp.o
+
+src/Light.i: src/Light.cpp.i
+
+.PHONY : src/Light.i
+
+# target to preprocess a source file
+src/Light.cpp.i:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Light.cpp.i
+.PHONY : src/Light.cpp.i
+
+src/Light.s: src/Light.cpp.s
+
+.PHONY : src/Light.s
+
+# target to generate assembly for a file
+src/Light.cpp.s:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Light.cpp.s
+.PHONY : src/Light.cpp.s
+
 src/Object3d.o: src/Object3d.cpp.o
 
 .PHONY : src/Object3d.o
@@ -339,6 +366,33 @@ src/Vector3d.cpp.s:
 	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Vector3d.cpp.s
 .PHONY : src/Vector3d.cpp.s
 
+src/dirLight.o: src/dirLight.cpp.o
+
+.PHONY : src/dirLight.o
+
+# target to build an object file
+src/dirLight.cpp.o:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o
+.PHONY : src/dirLight.cpp.o
+
+src/dirLight.i: src/dirLight.cpp.i
+
+.PHONY : src/dirLight.i
+
+# target to preprocess a source file
+src/dirLight.cpp.i:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.i
+.PHONY : src/dirLight.cpp.i
+
+src/dirLight.s: src/dirLight.cpp.s
+
+.PHONY : src/dirLight.s
+
+# target to generate assembly for a file
+src/dirLight.cpp.s:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.s
+.PHONY : src/dirLight.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -357,6 +411,9 @@ help:
 	@echo "... src/Color.o"
 	@echo "... src/Color.i"
 	@echo "... src/Color.s"
+	@echo "... src/Light.o"
+	@echo "... src/Light.i"
+	@echo "... src/Light.s"
 	@echo "... src/Object3d.o"
 	@echo "... src/Object3d.i"
 	@echo "... src/Object3d.s"
@@ -372,6 +429,9 @@ help:
 	@echo "... src/Vector3d.o"
 	@echo "... src/Vector3d.i"
 	@echo "... src/Vector3d.s"
+	@echo "... src/dirLight.o"
+	@echo "... src/dirLight.i"
+	@echo "... src/dirLight.s"
 .PHONY : help
 
 

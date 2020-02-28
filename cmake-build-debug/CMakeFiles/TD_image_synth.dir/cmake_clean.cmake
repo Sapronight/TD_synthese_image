@@ -2,11 +2,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/TD_image_synth.dir/main.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Color.cpp.o"
+  "CMakeFiles/TD_image_synth.dir/src/Light.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Ray.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Vector3d.cpp.o"
+  "CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o"
   "TD_image_synth"
   "TD_image_synth.pdb"
 )
