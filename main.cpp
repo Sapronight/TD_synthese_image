@@ -59,14 +59,14 @@ int main(){
     Sphere *pSphere;
     Vector3d c_sphere = Vector3d(0, 0, -10);
     Color c_color = Color(255, 0, 0);
-    pSphere = new Sphere(c_sphere, c_color , 50);
+    pSphere = new Sphere(c_sphere, c_color , 10);
     test1.addObject3d(pSphere);
 
-//    Sphere *p2Sphere;
-//    Vector3d c2_sphere = Vector3d(15, 15, -20);
-//    Vector3d c2_color = Vector3d(0, 255, 0);
-//    p2Sphere = new Sphere(c2_sphere, c2_color, 23);
-//    test1.addObject3d(p2Sphere);
+    Sphere *p2Sphere;
+    Vector3d c2_sphere = Vector3d(-30, -30, -10);
+    Color c2_color = Color(0, 255, 0);
+    p2Sphere = new Sphere(c2_sphere, c2_color, 50);
+    test1.addObject3d(p2Sphere);
 
 
 

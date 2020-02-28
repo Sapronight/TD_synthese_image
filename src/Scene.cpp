@@ -17,7 +17,7 @@ unsigned char* Scene::Raytrace(unsigned int width, unsigned int height, Vector3d
 
             Ray raycast = Ray(ray_o, ray_dir);
 
-            Vector3d color = getPixelColor(raycast).toBGR();
+            Vector3d color = getPixelColor(getNearestDistance(raycast)).toBGR();
 
             buffer[(y * width + x) * 3 + 0] = color.x;
             buffer[(y * width + x) * 3 + 1] = color.y;
@@ -32,16 +32,37 @@ void Scene::addObject3d(Object3d *new_obj) {
     objectList.push_back(new_obj);
 }
 
-Color Scene::getPixelColor(Ray &raycast) {
-    Color res = Color();
-    for(unsigned int i = 0; i < objectList.size(); i++){
-        if(objectList[i]->intersect(raycast) >= 2){
-            res = objectList[i]->getColor();
-        }
-    }
-    return res;
-}
-
 void Scene::render(string fileName, unsigned int width, unsigned int height, Vector3d ray_o, float k_vision) {
     scene.SaveBmp(fileName, Raytrace(width, height, ray_o, k_vision), width, height);
+}
+
+int Scene::getNearestDistance(Ray &raycast) {
+    unsigned int minId = -1;
+    vector<float> intersectList;
+    vector<unsigned int> idList;
+
+    for (unsigned int i = 0; i < objectList.size(); i++){
+        float intersect_tmp = objectList[i]->intersect(raycast);
+        if (intersect_tmp >= 0){
+            intersectList.push_back(intersect_tmp);
+            idList.push_back(i);
+        }
+    }
+
+    if (!intersectList.empty()){
+        int minElementIndex = min(intersectList.begin(),intersectList.end()) - intersectList.begin();
+        minId = idList[minElementIndex];
+    }
+
+    return minId;
+}
+
+Color Scene::getPixelColor(int nearestDistanceCoeff) {
+    Color res = Color();
+
+    if(nearestDistanceCoeff >= 0){
+        res = objectList[nearestDistanceCoeff]->getColor();
+    }
+
+    return res;
 }

@@ -31,6 +31,8 @@ Object3d.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
 Color.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+iostream
+-
 cstdio
 -
 cstdlib
@@ -73,28 +75,4 @@ Color.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/main.cpp
 ./header/main.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/main.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Color.cpp
-../header/Color.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Object3d.cpp
-../header/Object3d.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Ray.cpp
-../header/Ray.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Ray.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Scene.cpp
-../header/Scene.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Scene.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Sphere.cpp
-../header/Sphere.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
-
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Vector3d.cpp
-../header/Vector3d.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
 
