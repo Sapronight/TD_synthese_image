@@ -1,0 +1,3 @@
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/edit_cache.dir

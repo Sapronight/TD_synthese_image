@@ -1,0 +1,4 @@
+/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug
