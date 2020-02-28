@@ -58,7 +58,7 @@ int main(){
 
     Sphere *pSphere;
     Vector3d c_sphere = Vector3d(0, 0, -10);
-    Vector3d c_color = Vector3d(255, 0, 0);
+    Color c_color = Color(255, 0, 0);
     pSphere = new Sphere(c_sphere, c_color , 50);
     test1.addObject3d(pSphere);
 

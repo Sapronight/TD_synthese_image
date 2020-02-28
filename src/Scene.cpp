@@ -17,7 +17,7 @@ unsigned char* Scene::Raytrace(unsigned int width, unsigned int height, Vector3d
 
             Ray raycast = Ray(ray_o, ray_dir);
 
-            Vector3d color = getPixelColor(raycast);
+            Vector3d color = getPixelColor(raycast).toBGR();
 
             buffer[(y * width + x) * 3 + 0] = color.x;
             buffer[(y * width + x) * 3 + 1] = color.y;
@@ -32,8 +32,8 @@ void Scene::addObject3d(Object3d *new_obj) {
     objectList.push_back(new_obj);
 }
 
-Vector3d Scene::getPixelColor(Ray &raycast) {
-    Vector3d res = Vector3d(0, 0, 0);
+Color Scene::getPixelColor(Ray &raycast) {
+    Color res = Color();
     for(unsigned int i = 0; i < objectList.size(); i++){
         if(objectList[i]->intersect(raycast) >= 2){
             res = objectList[i]->getColor();

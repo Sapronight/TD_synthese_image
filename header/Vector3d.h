@@ -1,5 +1,8 @@
+#ifndef TD_IMAGE_SYNTH_VECTOR3D_H
+#define TD_IMAGE_SYNTH_VECTOR3D_H
 #include <iostream>
 #include <cmath>
+# pragma once
 
 class Vector3d{
     public:
@@ -28,3 +31,5 @@ class Vector3d{
         float y;
         float z;
 };
+
+#endif //TD_IMAGE_SYNTH_VECTOR3D_H

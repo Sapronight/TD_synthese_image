@@ -1,11 +1,10 @@
 //
 // Created by adrien on 21/02/2020.
 //
+#include "Vector3d.h"
 
 #ifndef TD_IMAGE_SYNTH_RAY_H
 #define TD_IMAGE_SYNTH_RAY_H
-
-#include "Vector3d.h"
 
 class Ray {
 private:

@@ -1,23 +1,23 @@
 //
 // Created by adrien on 28/02/2020.
 //
+#include "Vector3d.h"
 
 #ifndef TD_IMAGE_SYNTH_COLOR_H
 #define TD_IMAGE_SYNTH_COLOR_H
-
-#include "Vector3d.h"
+# pragma once
 
 class Color {
 public:
     // METHODS
     /* -- Constructor */
     Color();
-    Color(float red, float blue, float green);
+    Color(float red, float green, float blue);
     Color(Color& new_color);
     /* -- Other -- */
 
     Vector3d toBGR();
-    
+
     /* -- Operators -- */
 
     friend std::ostream &operator << (std::ostream &out, const Color c);

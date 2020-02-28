@@ -102,7 +102,7 @@ Color Color::operator*(const float k) {
     m_green = green;
     m_blue = blue;
 
-    return *this
+    return *this;
 }
 
 bool Color::operator==(const Color &c2) {

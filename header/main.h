@@ -9,5 +9,6 @@
 #include <cmath>
 #include "Scene.h"
 #include "Sphere.h"
+#include "Color.h"
 
 #endif //TD_IMAGE_SYNTH_MAIN_H

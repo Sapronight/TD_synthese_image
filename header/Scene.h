@@ -2,6 +2,10 @@
 // Created by adrien on 21/02/2020.
 //
 
+#include "Bmpfile.h"
+#include "Object3d.h"
+#include "Color.h"
+
 #ifndef TD_IMAGE_SYNTH_SCENE_H
 #define TD_IMAGE_SYNTH_SCENE_H
 
@@ -10,8 +14,7 @@
 #include <cstring>
 #include <string>
 #include <vector>
-#include "Bmpfile.h"
-#include "Object3d.h"
+
 
 using namespace std;
 
@@ -21,7 +24,7 @@ protected:
 
     vector<Object3d*> objectList;
 
-    Vector3d getPixelColor(Ray& raycast);
+    Color getPixelColor(Ray& raycast);
 public:
     unsigned char* Raytrace(unsigned int width, unsigned  int height, Vector3d ray_o, float k_vision);
 

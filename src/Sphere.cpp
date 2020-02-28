@@ -8,7 +8,7 @@ Sphere::Sphere(): Object3d() {
     rayon = 0;
 }
 
-Sphere::Sphere(Vector3d& new_origin, Vector3d& new_color, float new_rayon): Object3d(new_origin, new_color) {
+Sphere::Sphere(Vector3d& new_origin, Color& new_color, float new_rayon): Object3d(new_origin, new_color) {
     rayon = new_rayon;
 }
 

@@ -12,24 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875b4092-3b5e-4b22-952d-43f03666647f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TD_image_synth" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TD_image_synth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TD_image_synth.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TD_image_synth.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Color.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Color.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Object3d.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Object3d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Ray.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Ray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Scene.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Scene.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Sphere.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Sphere.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/Vector3d.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/Vector3d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/output.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/images/output.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Color.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Object3d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object3d.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sphere.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sphere.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1582294041082" duration="10440000" />
       <workItem from="1582533085553" duration="1206000" />
       <workItem from="1582534410272" duration="16000" />
-      <workItem from="1582875417281" duration="16394000" />
+      <workItem from="1582875417281" duration="18421000" />
     </task>
     <servers />
   </component>
@@ -107,22 +107,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1807" height="34" key="GridCell.Tab.0.bottom" timestamp="1582897957673">
+    <state width="1807" height="415" key="GridCell.Tab.0.bottom" timestamp="1582901966349">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="34" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582897957673" />
-    <state width="1807" height="34" key="GridCell.Tab.0.center" timestamp="1582897957673">
+    <state width="1807" height="415" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582901966349" />
+    <state width="1807" height="415" key="GridCell.Tab.0.center" timestamp="1582901966349">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="34" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582897957673" />
-    <state width="1807" height="34" key="GridCell.Tab.0.left" timestamp="1582897957673">
+    <state width="1807" height="415" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582901966349" />
+    <state width="1807" height="415" key="GridCell.Tab.0.left" timestamp="1582901966349">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="34" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582897957673" />
-    <state width="1807" height="34" key="GridCell.Tab.0.right" timestamp="1582897957673">
+    <state width="1807" height="415" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582901966349" />
+    <state width="1807" height="415" key="GridCell.Tab.0.right" timestamp="1582901966349">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="34" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582897957673" />
+    <state width="1807" height="415" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582901966349" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1582897281919">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

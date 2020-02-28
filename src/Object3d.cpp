@@ -6,15 +6,15 @@
 
 Object3d::Object3d() {
     origin =  Vector3d(0, 0, 0);
-    color = Vector3d(255, 0, 0);
+    color = Color();
 }
 
-Object3d::Object3d(Vector3d& new_origin, Vector3d& new_color) {
+Object3d::Object3d(Vector3d& new_origin, Color& new_color) {
     origin = new_origin;
     color = new_color;
 }
 
-Vector3d Object3d::getColor() const {
-    return color;
+Color Object3d::getColor() const {
+    return Color(color.m_red, color.m_green, color.m_blue);
 }
 
