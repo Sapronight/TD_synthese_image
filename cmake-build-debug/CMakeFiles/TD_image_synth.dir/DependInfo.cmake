@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/main.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/main.cpp.o"
   "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Bmpfile.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o"
+  "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Color.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Color.cpp.o"
   "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Object3d.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o"
   "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Ray.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Ray.cpp.o"
   "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Scene.cpp" "/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/cmake-build-debug/CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o"

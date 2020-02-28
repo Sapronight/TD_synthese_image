@@ -10,6 +10,10 @@
 string
 -
 
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+Vector3d.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
+
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
 Ray.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Ray.h
@@ -61,4 +65,12 @@ Sphere.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/main.cpp
 ./header/main.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/main.h
+
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Color.cpp
+../header/Color.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Sphere.cpp
+../header/Sphere.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
 

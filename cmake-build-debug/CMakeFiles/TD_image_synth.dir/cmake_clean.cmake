@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TD_image_synth.dir/main.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o"
+  "CMakeFiles/TD_image_synth.dir/src/Color.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Ray.cpp.o"
   "CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o"

@@ -13,6 +13,10 @@ CMakeFiles/TD_image_synth.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o: ../header/Bmpfile.h
 CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o: ../src/Bmpfile.cpp
 
+CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../header/Color.h
+CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../header/Vector3d.h
+CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../src/Color.cpp
+
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o: ../header/Object3d.h
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o: ../header/Ray.h
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o: ../header/Vector3d.h

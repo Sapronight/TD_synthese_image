@@ -87,6 +87,9 @@
 		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Bmpfile.h">
 			<Option target="TD_image_synth"/>
 		</Unit>
+		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h">
+			<Option target="TD_image_synth"/>
+		</Unit>
 		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h">
 			<Option target="TD_image_synth"/>
 		</Unit>
@@ -109,6 +112,9 @@
 			<Option target="TD_image_synth"/>
 		</Unit>
 		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Bmpfile.cpp">
+			<Option target="TD_image_synth"/>
+		</Unit>
+		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Color.cpp">
 			<Option target="TD_image_synth"/>
 		</Unit>
 		<Unit filename="/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Object3d.cpp">

@@ -177,6 +177,33 @@ src/Bmpfile.cpp.s:
 	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.s
 .PHONY : src/Bmpfile.cpp.s
 
+src/Color.o: src/Color.cpp.o
+
+.PHONY : src/Color.o
+
+# target to build an object file
+src/Color.cpp.o:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Color.cpp.o
+.PHONY : src/Color.cpp.o
+
+src/Color.i: src/Color.cpp.i
+
+.PHONY : src/Color.i
+
+# target to preprocess a source file
+src/Color.cpp.i:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Color.cpp.i
+.PHONY : src/Color.cpp.i
+
+src/Color.s: src/Color.cpp.s
+
+.PHONY : src/Color.s
+
+# target to generate assembly for a file
+src/Color.cpp.s:
+	$(MAKE) -f CMakeFiles/TD_image_synth.dir/build.make CMakeFiles/TD_image_synth.dir/src/Color.cpp.s
+.PHONY : src/Color.cpp.s
+
 src/Object3d.o: src/Object3d.cpp.o
 
 .PHONY : src/Object3d.o
@@ -327,6 +354,9 @@ help:
 	@echo "... src/Bmpfile.o"
 	@echo "... src/Bmpfile.i"
 	@echo "... src/Bmpfile.s"
+	@echo "... src/Color.o"
+	@echo "... src/Color.i"
+	@echo "... src/Color.s"
 	@echo "... src/Object3d.o"
 	@echo "... src/Object3d.i"
 	@echo "... src/Object3d.s"
