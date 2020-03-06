@@ -8,8 +8,8 @@ Sphere::Sphere(): Object3d() {
     rayon = 0;
 }
 
-Sphere::Sphere(Vector3d& new_origin, Color& new_color, float new_rayon, float n_shiny
-        , float n_kr): Object3d(new_origin, new_color, n_shiny, n_kr) {
+Sphere::Sphere(Vector3d& new_origin, Color& new_color,float new_rayon, float n_ks, float n_shiny
+        , float n_kr): Object3d(new_origin, new_color, n_ks ,n_shiny , n_kr) {
     rayon = new_rayon;
 }
 
@@ -50,7 +50,7 @@ float Sphere::intersect(Ray &ray) {
 }
 
 Color Sphere::lightInfluenceLambert(Vector3d pixelPoint, Color colorLight,
-        Vector3d directionLight, Color secondCL, Vector3d secondDL) {
+        Vector3d directionLight, Color secondCL, Vector3d secondDL, Ray& raycast) {
     // TODO: Ne pas oublier de normaliser le vecteur Normal (via getNormalAt)
     // TODO: Normaliser les couleurs pour faire les calculs
     /* Idiffuse */
@@ -75,13 +75,41 @@ Color Sphere::lightInfluenceLambert(Vector3d pixelPoint, Color colorLight,
 
     Vector3d temp_res = normalizeColorObject * (normalizeColorLight * scalarProduct + normalizeSecondCL * secondScalarP);
 
-    cout << temp_res << endl;
-    Color res = Color(temp_res.x, temp_res.y, temp_res.z).unNormalize();
 
     /* Ispecular */
+    Vector3d toObservator = (raycast.getOrigin() - pixelPoint).normalize();
+    Vector3d reflexion = normalVector * (-scalarProduct);
+    reflexion = reflexion * 2;
+    reflexion = reflexion - directionLight;
+    reflexion = reflexion.normalize();
+    float scalarProduct3 = - reflexion.dot(toObservator);
+    if(scalarProduct3 < 0){
+        scalarProduct3 = 0;
+    }
+    Vector3d Ispec = colorLight.normalize().toVector() * pow(scalarProduct3, m_shiny);
+    Ispec = Ispec * m_ks;
+    temp_res += Ispec;
 
 
+    Vector3d toObservator2 = (raycast.getOrigin() - pixelPoint).normalize();
+    Vector3d reflexion2 = normalVector * (-secondScalarP);
+    reflexion2 = reflexion2 * 2;
+    reflexion2 = reflexion2 - secondDL;
+    reflexion2 = reflexion2.normalize();
+    float scalarProduct4 =  reflexion2.dot(toObservator2);
+    if(scalarProduct4 < 0){
+        scalarProduct4 = 0;
+    }
 
+    Vector3d Ispec2 = secondCL.normalize().toVector() * pow(scalarProduct4, m_shiny);
+    Ispec2 = Ispec2 * m_ks;
+    temp_res += Ispec2;
+
+
+    /* END */
+    cout << scalarProduct4 << endl;
+    // cout << temp_res << endl;
+    Color res = Color(temp_res.x, temp_res.y, temp_res.z).unNormalize();
 
     return res;
 

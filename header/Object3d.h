@@ -13,18 +13,18 @@ protected:
 
     Color color;
 
-    float ks;
+    float m_ks;
 
-    float shiny;
+    float m_shiny;
 
-    float kr;
+    float m_kr;
 
 public:
     /* -- Constructor -- */
 
     Object3d();
 
-    Object3d(Vector3d& new_origin, Color& new_color, float n_shiny, float n_kr);
+    Object3d(Vector3d& new_origin, Color& new_color, float ks ,float n_shiny, float n_kr);
 
     /* -- Getters -- */
 
@@ -34,13 +34,14 @@ public:
 
     float getkr() const;
 
+    float getks() const;
 
     /* -- Other -- */
 
     virtual float intersect(Ray& ray) = 0;
 
     virtual Color lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight,
-            Color secondCL, Vector3d secondDL) = 0;
+            Color secondCL, Vector3d secondDL, Ray& raycast) = 0;
 
     virtual Vector3d getNormalAt(Vector3d pixelPoint) = 0;
 };

@@ -31,7 +31,7 @@ protected:
 
     vector<Object3d*> objectList;
 
-    Color getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint);
+    Color getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint, Ray& raycast);
 
 public:
     Scene();

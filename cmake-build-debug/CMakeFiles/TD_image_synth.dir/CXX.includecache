@@ -20,13 +20,21 @@ Color.h
 Vector3d.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
 
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
+Color.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+Object3d.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
+iostream
+-
+
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
 iostream
 -
 cmath
 -
 
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Object3d.cpp
-../header/Object3d.h
-/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Sphere.cpp
+../header/Sphere.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
 

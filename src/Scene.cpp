@@ -17,7 +17,7 @@ unsigned char* Scene::Raytrace(unsigned int width, unsigned int height, Vector3d
 
             Ray raycast = Ray(ray_o, ray_dir);
 
-            Vector3d color = getPixelColor(getNearestDistance(raycast), bufferPoint).toBGR();
+            Vector3d color = getPixelColor(getNearestDistance(raycast), bufferPoint, raycast).toBGR();
 
             buffer[(y * width + x) * 3 + 0] = color.x;
             buffer[(y * width + x) * 3 + 1] = color.y;
@@ -57,15 +57,16 @@ int Scene::getNearestDistance(Ray &raycast) {
     return minId;
 }
 
-Color Scene::getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint) {
+Color Scene::getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint, Ray& raycast) {
     Color res = Color();
+
 
     // TODO : Remplacement du getColor par la formule :
     if(nearestDistanceCoeff >= 0){
         // res = objectList[nearestDistanceCoeff]->getColor();
         res = objectList[nearestDistanceCoeff]->lightInfluenceLambert(pixelPoint,
                 defaultLightDirection.getLightColor(), defaultLightDirection.getVectorDirLight(),
-                secondLightDirection.getLightColor(), secondLightDirection.getVectorDirLight());
+                secondLightDirection.getLightColor(), secondLightDirection.getVectorDirLight(), raycast);
     }
 
     return res;

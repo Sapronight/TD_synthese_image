@@ -65,19 +65,19 @@ int main(){
     Sphere *pSphere;
     Vector3d c_sphere = Vector3d(0.85 * k_mult, 0, -20);
     Color c_color = Color(255, 0, 0);
-    pSphere = new Sphere(c_sphere, c_color , 0.2 * k_mult, 10, 1);
+    pSphere = new Sphere(c_sphere, c_color , 0.2 * k_mult,1, 10, 1);
     test1.addObject3d(pSphere);
 
     Sphere *p2Sphere;
     Vector3d c2_sphere = Vector3d(0, 0.85 * k_mult, -20);
     Color c2_color = Color(0, 255, 0);
-    p2Sphere = new Sphere(c2_sphere, c2_color, 0.2 * k_mult, 10, 1);
+    p2Sphere = new Sphere(c2_sphere, c2_color, 0.2 * k_mult, 1,10, 1);
     test1.addObject3d(p2Sphere);
 
     Sphere *p3Sphere;
     Vector3d c3_sphere = Vector3d(0, 0.0 * k_mult, -20);
     Color c3_color = Color(0, 0, 255);
-    p3Sphere = new Sphere(c3_sphere, c3_color, 0.5 * k_mult, 20, 0.5);
+    p3Sphere = new Sphere(c3_sphere, c3_color, 0.5 * k_mult, 0.5,20, 0.5);
     test1.addObject3d(p3Sphere);
 
 

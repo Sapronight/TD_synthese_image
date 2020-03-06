@@ -2,7 +2,7 @@
 #define TD_IMAGE_SYNTH_VECTOR3D_H
 #include <iostream>
 #include <cmath>
-# pragma once
+#pragma once
 
 class Vector3d{
     public:
