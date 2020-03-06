@@ -50,31 +50,42 @@ int main(){
     //	BMPFile::SaveBmp("../images/earth_copy.bmp", bmp,width,height);
 	// Test Scene :
 
-	Vector3d defaultDirLight = Vector3d(1, 1, 0);
+	Vector3d defaultDirLight = Vector3d(-1, -1, 0);
 	Color defaultLightColor = Color(255, 255, 255);
 
-	Scene test1 = Scene(defaultDirLight, defaultLightColor);
+	Vector3d secondDirLight = Vector3d(0, 1, 0);
+	Color secondLightColor = Color(125, 125, 0);
+
+
+	Scene test1 = Scene(defaultDirLight, defaultLightColor, secondDirLight, secondLightColor);
 	// test1.Raytrace("../images/rouge.png", 1080, 720);
 	// Test GameObject
+	float k_mult = 150;
 
     Sphere *pSphere;
-    Vector3d c_sphere = Vector3d(0, 0, -10);
+    Vector3d c_sphere = Vector3d(0.85 * k_mult, 0, -20);
     Color c_color = Color(255, 0, 0);
-    pSphere = new Sphere(c_sphere, c_color , 20);
+    pSphere = new Sphere(c_sphere, c_color , 0.2 * k_mult, 10, 1);
     test1.addObject3d(pSphere);
 
     Sphere *p2Sphere;
-    Vector3d c2_sphere = Vector3d(-30, -30, -10);
+    Vector3d c2_sphere = Vector3d(0, 0.85 * k_mult, -20);
     Color c2_color = Color(0, 255, 0);
-    p2Sphere = new Sphere(c2_sphere, c2_color, 50);
+    p2Sphere = new Sphere(c2_sphere, c2_color, 0.2 * k_mult, 10, 1);
     test1.addObject3d(p2Sphere);
+
+    Sphere *p3Sphere;
+    Vector3d c3_sphere = Vector3d(0, 0.0 * k_mult, -20);
+    Color c3_color = Color(0, 0, 255);
+    p3Sphere = new Sphere(c3_sphere, c3_color, 0.5 * k_mult, 20, 0.5);
+    test1.addObject3d(p3Sphere);
 
 
 
     //DirectionalLight *pLight = new DirectionalLight(Vector3d(1, 0, 0));
     //scene.AddLight(pLight);
 
-    test1.render("../images/output.bmp", 200, 200, Vector3d(0, 0, 100), 0.1);
+    test1.render("../images/output.bmp", 400, 400, Vector3d(0, 0, 500), 0.1);
 
     //intersection_test();
     return 0;

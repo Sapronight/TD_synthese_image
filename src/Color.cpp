@@ -136,7 +136,22 @@ Color Color::unNormalize() {
     m_green = m_green * 255;
     m_blue = m_blue * 255;
 
+    if(m_red > 255){
+        m_red = 255;
+    }
+    if(m_green > 255){
+        m_green = 255;
+    }
+    if(m_blue > 255){
+        m_blue = 255;
+    }
+
     return *this;
+}
+
+Vector3d Color::toVector() {
+    Vector3d res = Vector3d(m_red, m_green, m_blue);
+    return res;
 }
 
 

@@ -27,6 +27,8 @@ protected:
 
     dirLight defaultLightDirection;
 
+    dirLight secondLightDirection;
+
     vector<Object3d*> objectList;
 
     Color getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint);
@@ -34,7 +36,7 @@ protected:
 public:
     Scene();
 
-    Scene(Vector3d& otherDirLight, Color& colorLight);
+    Scene(Vector3d& otherDirLight, Color& colorLight, Vector3d& secondDL, Color& secondCL);
 
     unsigned char* Raytrace(unsigned int width, unsigned  int height, Vector3d ray_o, float k_vision);
 

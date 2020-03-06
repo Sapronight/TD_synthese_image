@@ -8,7 +8,8 @@ Sphere::Sphere(): Object3d() {
     rayon = 0;
 }
 
-Sphere::Sphere(Vector3d& new_origin, Color& new_color, float new_rayon): Object3d(new_origin, new_color) {
+Sphere::Sphere(Vector3d& new_origin, Color& new_color, float new_rayon, float n_shiny
+        , float n_kr): Object3d(new_origin, new_color, n_shiny, n_kr) {
     rayon = new_rayon;
 }
 
@@ -48,25 +49,42 @@ float Sphere::intersect(Ray &ray) {
     return t;
 }
 
-Color Sphere::lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight) {
+Color Sphere::lightInfluenceLambert(Vector3d pixelPoint, Color colorLight,
+        Vector3d directionLight, Color secondCL, Vector3d secondDL) {
     // TODO: Ne pas oublier de normaliser le vecteur Normal (via getNormalAt)
     // TODO: Normaliser les couleurs pour faire les calculs
-
+    /* Idiffuse */
     Vector3d normalVector = getNormalAt(pixelPoint).normalize();
-    Vector3d normalizeColorLight = colorLight.normalize().toBGR();
-    Vector3d normalizeColorObject = color.normalize().toBGR();
+    Vector3d normalizeColorLight = colorLight.normalize().toVector();
+    Vector3d normalizeColorObject = color.normalize().toVector();
 
     //Vector3d scalarProduct = normalVector.dot(directionLight.normalize());
-    float scalarProduct = normalVector.dot(directionLight.normalize());
+    float scalarProduct =  - normalVector.dot(directionLight);
     if(scalarProduct < 0){
         scalarProduct = 0;
     }
 
+
+    Vector3d normalizeSecondCL = secondCL.normalize().toVector();
+    float secondScalarP =  - normalVector.dot(secondDL);
+    if(secondScalarP < 0){
+        secondScalarP = 0;
+    }
+
     // cout << normalVector << normalizeColorLight << normalizeColorObject << colorLight << endl;
 
-    Vector3d temp_res = normalizeColorObject * normalizeColorLight * scalarProduct;
-    Color res = Color(temp_res.z, temp_res.y, temp_res.x).unNormalize();
+    Vector3d temp_res = normalizeColorObject * (normalizeColorLight * scalarProduct + normalizeSecondCL * secondScalarP);
+
+    cout << temp_res << endl;
+    Color res = Color(temp_res.x, temp_res.y, temp_res.z).unNormalize();
+
+    /* Ispecular */
+
+
+
+
     return res;
+
 }
 
 Vector3d Sphere::getNormalAt(Vector3d pixelPoint) {

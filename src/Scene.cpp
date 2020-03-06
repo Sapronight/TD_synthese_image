@@ -11,7 +11,7 @@ unsigned char* Scene::Raytrace(unsigned int width, unsigned int height, Vector3d
         for(unsigned int y = 0; y < height; y++){
             // Vector3d ray_origin = Vector3d(0, 0, 20);
             Vector3d bufferPoint = Vector3d((float(x - width / 2.0 )),
-                                            (float(y - height / 2.0)),
+                                             - (float(y - height / 2.0)),
                     0.0);
             Vector3d ray_dir = bufferPoint-ray_o;
 
@@ -64,7 +64,8 @@ Color Scene::getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint) {
     if(nearestDistanceCoeff >= 0){
         // res = objectList[nearestDistanceCoeff]->getColor();
         res = objectList[nearestDistanceCoeff]->lightInfluenceLambert(pixelPoint,
-                defaultLightDirection.getLightColor(), defaultLightDirection.getVectorDirLight());
+                defaultLightDirection.getLightColor(), defaultLightDirection.getVectorDirLight(),
+                secondLightDirection.getLightColor(), secondLightDirection.getVectorDirLight());
     }
 
     return res;
@@ -72,10 +73,13 @@ Color Scene::getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint) {
 
 Scene::Scene() {
     defaultLightDirection = dirLight();
+    secondLightDirection = dirLight();
 }
 
-Scene::Scene(Vector3d& otherDirLight, Color& colorLight) {
+Scene::Scene(Vector3d& otherDirLight, Color& colorLight, Vector3d& secondDL, Color& secondCL) {
     defaultLightDirection.setVectorDirLight(otherDirLight);
     defaultLightDirection.setLightColor(colorLight);
 
+    secondLightDirection.setLightColor(secondCL);
+    secondLightDirection.setVectorDirLight(secondDL);
 }

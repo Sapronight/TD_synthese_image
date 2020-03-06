@@ -17,6 +17,7 @@ public:
     /* -- Other -- */
 
     Vector3d toBGR();
+    Vector3d toVector();
 
     /* -- Operators -- */
 

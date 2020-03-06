@@ -15,11 +15,12 @@ protected:
 public:
     Sphere();
 
-    Sphere(Vector3d& new_origin, Color& new_color, float new_rayon);
+    Sphere(Vector3d& new_origin, Color& new_color, float new_rayon, float n_shiny, float n_kr);
 
     float intersect(Ray &ray) override;
 
-    Color lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight) override ;
+    Color lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight
+            , Color secondCL, Vector3d secondDL) override ;
 
     Vector3d getNormalAt(Vector3d pixelPoint) override ;
 };
