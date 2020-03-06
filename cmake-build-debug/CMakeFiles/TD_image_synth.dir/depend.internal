@@ -4,11 +4,13 @@
 CMakeFiles/TD_image_synth.dir/main.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Bmpfile.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Ray.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Scene.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/main.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/main.cpp
 CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o
@@ -18,6 +20,11 @@ CMakeFiles/TD_image_synth.dir/src/Color.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Color.cpp
+CMakeFiles/TD_image_synth.dir/src/Light.cpp.o
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Light.cpp
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
@@ -31,10 +38,12 @@ CMakeFiles/TD_image_synth.dir/src/Ray.cpp.o
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Bmpfile.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Ray.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Scene.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Scene.cpp
 CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
@@ -46,3 +55,9 @@ CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o
 CMakeFiles/TD_image_synth.dir/src/Vector3d.cpp.o
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
  /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/Vector3d.cpp
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
+ /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/src/dirLight.cpp

@@ -48,18 +48,19 @@ int main(){
     //    unsigned int width, height;
     //	unsigned char *bmp = BMPFile::LoadBmp("../images/earth.bmp", width, height);
     //	BMPFile::SaveBmp("../images/earth_copy.bmp", bmp,width,height);
-
 	// Test Scene :
 
-	Scene test1;
-	// test1.Raytrace("../images/rouge.png", 1080, 720);
+	Vector3d defaultDirLight = Vector3d(1, 1, 0);
+	Color defaultLightColor = Color(255, 255, 255);
 
+	Scene test1 = Scene(defaultDirLight, defaultLightColor);
+	// test1.Raytrace("../images/rouge.png", 1080, 720);
 	// Test GameObject
 
     Sphere *pSphere;
     Vector3d c_sphere = Vector3d(0, 0, -10);
     Color c_color = Color(255, 0, 0);
-    pSphere = new Sphere(c_sphere, c_color , 10);
+    pSphere = new Sphere(c_sphere, c_color , 20);
     test1.addObject3d(pSphere);
 
     Sphere *p2Sphere;

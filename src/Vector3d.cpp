@@ -91,3 +91,7 @@ Vector3d Vector3d::normalize(){
     z = z / norm;
     return *this;
 }
+
+Vector3d Vector3d::operator*(const Vector3d &v2) {
+    return Vector3d(x * v2.x, y * v2.y, z * v2.z);
+}

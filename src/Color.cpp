@@ -123,5 +123,21 @@ Vector3d Color::toBGR() {
     return Vector3d(m_blue, m_green, m_red);
 }
 
+Color Color::normalize() {
+    float other_red = m_red / 255;
+    float other_green = m_green / 255;
+    float other_blue = m_blue / 255;
+
+    return Color(other_red, other_green, other_blue);
+}
+
+Color Color::unNormalize() {
+    m_red = m_red * 255;
+    m_green = m_green * 255;
+    m_blue = m_blue * 255;
+
+    return *this;
+}
+
 
 

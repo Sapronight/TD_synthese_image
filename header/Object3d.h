@@ -28,6 +28,10 @@ public:
     /* -- Other -- */
 
     virtual float intersect(Ray& ray) = 0;
+
+    virtual Color lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight) = 0;
+
+    virtual Vector3d getNormalAt(Vector3d pixelPoint) = 0;
 };
 
 #endif //TD_IMAGE_SYNTH_OBJECT3D_H

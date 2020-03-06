@@ -27,6 +27,10 @@ public:
 
     Color getLightColor() const;
 
+    /* -- Setters -- */
+
+    void setLightColor(Color& otherLightColor);
+
 };
 
 #endif //TD_IMAGE_SYNTH_LIGHT_H

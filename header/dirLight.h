@@ -6,12 +6,12 @@
 #ifndef TD_IMAGE_SYNTH_DIRLIGHT_H
 #define TD_IMAGE_SYNTH_DIRLIGHT_H
 
-class dirLight{
+class dirLight : public Light{
 public:
     //METHODS
     dirLight();
 
-    dirLight(Vector3d& vectorLight);
+    dirLight(Vector3d& vectorLight, Color& lightColor);
 
     dirLight(dirLight& new_dirLight);
 

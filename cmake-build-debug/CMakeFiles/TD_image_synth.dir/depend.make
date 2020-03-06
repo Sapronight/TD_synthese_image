@@ -3,11 +3,13 @@
 
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Bmpfile.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Color.h
+CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Light.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Object3d.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Ray.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Scene.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Sphere.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/Vector3d.h
+CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/dirLight.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../header/main.h
 CMakeFiles/TD_image_synth.dir/main.cpp.o: ../main.cpp
 
@@ -17,6 +19,11 @@ CMakeFiles/TD_image_synth.dir/src/Bmpfile.cpp.o: ../src/Bmpfile.cpp
 CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../header/Color.h
 CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../header/Vector3d.h
 CMakeFiles/TD_image_synth.dir/src/Color.cpp.o: ../src/Color.cpp
+
+CMakeFiles/TD_image_synth.dir/src/Light.cpp.o: ../header/Color.h
+CMakeFiles/TD_image_synth.dir/src/Light.cpp.o: ../header/Light.h
+CMakeFiles/TD_image_synth.dir/src/Light.cpp.o: ../header/Vector3d.h
+CMakeFiles/TD_image_synth.dir/src/Light.cpp.o: ../src/Light.cpp
 
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o: ../header/Color.h
 CMakeFiles/TD_image_synth.dir/src/Object3d.cpp.o: ../header/Object3d.h
@@ -30,10 +37,12 @@ CMakeFiles/TD_image_synth.dir/src/Ray.cpp.o: ../src/Ray.cpp
 
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Bmpfile.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Color.h
+CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Light.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Object3d.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Ray.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Scene.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/Vector3d.h
+CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../header/dirLight.h
 CMakeFiles/TD_image_synth.dir/src/Scene.cpp.o: ../src/Scene.cpp
 
 CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o: ../header/Color.h
@@ -45,4 +54,10 @@ CMakeFiles/TD_image_synth.dir/src/Sphere.cpp.o: ../src/Sphere.cpp
 
 CMakeFiles/TD_image_synth.dir/src/Vector3d.cpp.o: ../header/Vector3d.h
 CMakeFiles/TD_image_synth.dir/src/Vector3d.cpp.o: ../src/Vector3d.cpp
+
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o: ../header/Color.h
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o: ../header/Light.h
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o: ../header/Vector3d.h
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o: ../header/dirLight.h
+CMakeFiles/TD_image_synth.dir/src/dirLight.cpp.o: ../src/dirLight.cpp
 

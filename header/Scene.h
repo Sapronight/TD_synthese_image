@@ -15,6 +15,8 @@
 #include <cstring>
 #include <string>
 #include <vector>
+#include "dirLight.h"
+
 
 
 using namespace std;
@@ -23,10 +25,17 @@ class Scene {
 protected:
     BMPFile scene;
 
+    dirLight defaultLightDirection;
+
     vector<Object3d*> objectList;
 
-    Color getPixelColor(int nearestDistanceCoeff);
+    Color getPixelColor(int nearestDistanceCoeff, Vector3d pixelPoint);
+
 public:
+    Scene();
+
+    Scene(Vector3d& otherDirLight, Color& colorLight);
+
     unsigned char* Raytrace(unsigned int width, unsigned  int height, Vector3d ray_o, float k_vision);
 
     void addObject3d(Object3d* new_obj);

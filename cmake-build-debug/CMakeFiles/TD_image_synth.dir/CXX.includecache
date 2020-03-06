@@ -14,6 +14,10 @@ string
 Vector3d.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Vector3d.h
 
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
+Color.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Object3d.h
 Ray.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Ray.h
@@ -43,6 +47,8 @@ string
 -
 vector
 -
+dirLight.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
 
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
 Color.h
@@ -58,6 +64,10 @@ iostream
 cmath
 -
 
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
+Light.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Light.h
+
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/main.h
 iostream
 -
@@ -71,6 +81,8 @@ Sphere.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Sphere.h
 Color.h
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/Color.h
+dirLight.h
+/media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/header/dirLight.h
 
 /media/adrien/DATA/Linux/Synthese_d_image/TD_image_synth/main.cpp
 ./header/main.h

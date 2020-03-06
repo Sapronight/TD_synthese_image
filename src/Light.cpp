@@ -20,3 +20,7 @@ Color Light::getLightColor() const {
 Light::Light(Color new_LightColor) {
     light_color = new_LightColor;
 }
+
+void Light::setLightColor(Color &otherLightColor) {
+    light_color = otherLightColor;
+}

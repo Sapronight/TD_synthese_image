@@ -32,6 +32,13 @@ public:
     bool operator == (const Color &c2);
     bool operator != (const Color &c2);
 
+    /* -- Other function -- */
+
+    Color normalize();
+
+    Color unNormalize();
+
+
     //ATTRIBUTES
     float m_red;
     float m_green;

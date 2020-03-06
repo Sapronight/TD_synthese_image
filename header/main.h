@@ -10,5 +10,6 @@
 #include "Scene.h"
 #include "Sphere.h"
 #include "Color.h"
+#include "dirLight.h"
 
 #endif //TD_IMAGE_SYNTH_MAIN_H

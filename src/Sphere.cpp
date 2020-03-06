@@ -48,5 +48,32 @@ float Sphere::intersect(Ray &ray) {
     return t;
 }
 
+Color Sphere::lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight) {
+    // TODO: Ne pas oublier de normaliser le vecteur Normal (via getNormalAt)
+    // TODO: Normaliser les couleurs pour faire les calculs
+
+    Vector3d normalVector = getNormalAt(pixelPoint).normalize();
+    Vector3d normalizeColorLight = colorLight.normalize().toBGR();
+    Vector3d normalizeColorObject = color.normalize().toBGR();
+
+    //Vector3d scalarProduct = normalVector.dot(directionLight.normalize());
+    float scalarProduct = normalVector.dot(directionLight.normalize());
+    if(scalarProduct < 0){
+        scalarProduct = 0;
+    }
+
+    // cout << normalVector << normalizeColorLight << normalizeColorObject << colorLight << endl;
+
+    Vector3d temp_res = normalizeColorObject * normalizeColorLight * scalarProduct;
+    Color res = Color(temp_res.z, temp_res.y, temp_res.x).unNormalize();
+    return res;
+}
+
+Vector3d Sphere::getNormalAt(Vector3d pixelPoint) {
+    Vector3d res;
+    res = pixelPoint - origin;
+    return res;
+}
+
 
 

@@ -18,6 +18,10 @@ public:
     Sphere(Vector3d& new_origin, Color& new_color, float new_rayon);
 
     float intersect(Ray &ray) override;
+
+    Color lightInfluenceLambert(Vector3d pixelPoint, Color colorLight, Vector3d directionLight) override ;
+
+    Vector3d getNormalAt(Vector3d pixelPoint) override ;
 };
 
 #endif //TD_IMAGE_SYNTH_SPHERE_H

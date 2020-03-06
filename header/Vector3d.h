@@ -23,6 +23,8 @@ class Vector3d{
         Vector3d operator += (const Vector3d &v2);
         Vector3d operator -= (const Vector3d &v2);
         Vector3d operator * (const float k);
+
+        Vector3d operator * (const Vector3d& v2);
         bool operator == (const Vector3d &v2);
         bool operator != (const Vector3d &v2);
 
